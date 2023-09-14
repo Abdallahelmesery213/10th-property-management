@@ -160,6 +160,9 @@ header .nav2 ul li{
 }
 
 /* start banners */
+.main-banner img{
+    width: 100%;
+}
 .banner{
     border-bottom: 5px solid #027cc2;
     width: 100%;
