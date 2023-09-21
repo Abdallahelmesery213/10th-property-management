@@ -33,8 +33,8 @@ header{
 }
 header .nav1{
     margin-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 55px;
+    /* margin-bottom: 30px; */
+    padding-bottom: 60px;
 }
 
 header .nav1 ul li:first-of-type{
@@ -71,13 +71,14 @@ header .nav2{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 100%;
+    width: 75%;
 }
 header .nav2 ul{
     margin-left: 50px;
 }
 header .nav2 ul li{
     font-size: 14px;
+    cursor: pointer;
 }
 /* end header */
 
@@ -359,6 +360,11 @@ footer form .btn{
 /* start home sreen */
 
 /* start media query */
+@media only screen and (max-width: 1024px) {
+    header .nav1{
+        padding-bottom: 12%;
+    }
+}
 @media only screen and (max-width: 1109px) {
     .counter-top .btns {
         width: 100%;
@@ -384,6 +390,9 @@ footer form .btn{
     
 }
 @media only screen and (max-width: 767px) {
+    header .nav2 {
+        width: 100%;
+    }
     header .nav2 ul {
         margin-left: 0;
     }
@@ -473,6 +482,9 @@ footer form .btn{
     
 }
 @media only screen and (max-width: 575px) {
+    header .nav1{
+        padding-bottom: 15%;
+    }
     header .nav2 {
         padding: 10px 0;
     }
@@ -531,7 +543,11 @@ footer form .btn{
         font-size: 13px;
     }
 }
-
+@media only screen and (max-width: 475px) {
+    header .nav1{
+        padding-bottom: 20%;
+    }
+}
 @media only screen and (max-width: 558px) {
     header .nav1 ul li {
         margin-left: 5px;
@@ -566,11 +582,17 @@ footer form .btn{
     
 }
 @media only screen and (max-width: 375px) {
+    header .nav1{
+        padding-bottom: 25%;
+    }
     .banner .banner-text hr{
         margin: auto;
     }
     .banner .banner-text h3 {
         margin-top: 50%;
+    }
+    form button.d-flex{
+        padding: 5px 10px;
     }
     
 }
